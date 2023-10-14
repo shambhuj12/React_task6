@@ -1,13 +1,18 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Textform from "./components/Textform";
+// src/App.js
+import React from 'react';
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';
+import SocialLinks from './components/SocialLinks';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <Navbar title="shambhu" abouttxt="about_shambhu"/>
-      <Textform heading="Enter text to analyze"/>
-    </>
+    <div className="App">
+
+    <Header className="header"></Header>
+    <AboutMe></AboutMe>
+    <SocialLinks></SocialLinks>
+    </div>
   );
 }
 
